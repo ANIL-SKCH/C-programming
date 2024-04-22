@@ -1,0 +1,31 @@
+// Write a C program to check if the given string contains Capital letter, small letter, special chracter and digits.
+
+
+#include<stdio.h>
+#include<string.h>
+int main() {
+char s[50];
+int i,j,n,caps=0,small=0,d=0,spe=0;
+printf("enter the string : ");
+gets(s);
+n=strlen(s);
+for(i=0;s[i]!='\0';i++){
+    if (s[i]>='A' && s[i]<='Z'){
+        caps++;
+    }
+    else if(s[i]>='a'&& s[i]<='z'){
+           small++;
+    }
+    else if(s[i]>='0' && s[i]<='9'){
+                d++;
+    } else {
+        spe++;
+    }                
+}
+if(caps!=0 && small!=0 && d!=0 && spe!=0 ){
+    printf("The given String is matching to our cases.");
+} else {
+    printf("The given String is not matching to our cases.");
+}
+return 0;
+}
