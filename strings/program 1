@@ -1,0 +1,18 @@
+//Write a C program to count the number of alphabet present in a given String .
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char s[1000]; 
+   int i,c=0;
+    printf("Enter  the string : ");
+    scanf("%s",s); 
+    for(i=0;s[i];i++)  
+    {
+        if((s[i]>=65 && s[i]<=90)|| (s[i]>=97 && s[i]<=122) ){
+          c++;
+        }
+ 	}  
+    printf("The count of Alphabets = %d\n",c);
+    return 0;
+}
