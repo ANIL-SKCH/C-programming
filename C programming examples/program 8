@@ -1,4 +1,4 @@
-// C program to print Anagrams between 1 t0 1000.
+// C program to print Armstrong numbers  between 1 t0 1000.
 #include <stdio.h>
 int main() {
     int i,d,t,sum;
